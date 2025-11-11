@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capital Fest - December 28</title>
+  <meta name="description" content="Capital Fest Events - A full day festival of music, food, art, and community. December 28." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0d14;
+      --fg: #f8fafc;
+      --muted: #93a3b5;
+      --brand: #e11d48;
+      --accent: #f59e0b;
+      --card: #121826;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--fg); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1200px, 92%); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(10,13,20,.6); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding: 14px 0; }
+    .brand { display:flex; align-items:center; gap: 12px; font-weight:800; letter-spacing:.5px; }
+    .brand img { width: 48px; height: auto; border-radius: 8px; }
+    .nav a.btn { background: var(--brand); color: #fff; font-weight:700; padding: 10px 16px; border-radius: 12px; border: none; box-shadow: 0 8px 24px rgba(225,29,72,.3); }
+    .nav a.btn:hover { filter: brightness(1.05); text-decoration: none; }
+
+    .hero { position: relative; padding: 96px 0 72px; background:
+      radial-gradient(800px 400px at 10% -10%, rgba(225,29,72,.25), transparent 60%),
+      radial-gradient(700px 400px at 90% 0%, rgba(245,158,11,.20), transparent 60%);
+      text-align:center;
+    }
+    .hero h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; margin: 0 0 14px; }
+    .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--muted); margin: 0 0 24px; }
+    .hero img.logo { width: 160px; height: auto; margin-bottom: 24px; }
+    .btn { display:inline-flex; align-items:center; gap:10px; padding: 12px 18px; border-radius: 14px; border: none; font-weight:700; cursor:pointer; }
+    .btn.primary { background: linear-gradient(180deg, var(--brand), #b91c1c); color:#fff; box-shadow: 0 10px 28px rgba(225,29,72,.35); }
+    .btn.secondary { background: #0f1524; color: var(--fg); }
+    section { padding:80px 0; text-align:center; }
+    h2 { font-size: 2em; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><img src="Logo.jpg" alt="Capital Fest Logo" /> <span>Capital Fest</span></div>
+      <nav style="display:flex; gap:14px; align-items:center;">
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#vendors">Vendors</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="logo" src="Logo.jpg" alt="Capital Fest Events Logo" />
+        <h1>Capital Fest - Music, Food & Community</h1>
+        <p class="lead">Join thousands for a full day celebration featuring live performances, local vendors, tasty eats, and activities for all ages on December 28.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://www.facebook.com/share/1CgYRzGSTV/" target="_blank" rel="noopener">I'm Going on Facebook</a>
+          <a class="btn secondary" href="https://instagram.com/capitalfestevents" target="_blank" rel="noopener">Follow us on Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities">
+      <div class="container">
+        <h2>Free Activities for Everyone</h2>
+        <p style="color:var(--muted); max-width:700px; margin:0 auto 30px;">We’re offering <strong>free activities for children</strong> such as face painting, and special <strong>free experiences for women</strong> as well! Stay tuned - we’ll be announcing full details soon on our <a href="https://instagram.com/capitalfestevents" target="_blank" rel="noopener">Instagram page @capitalfestevents</a>.</p>
+        <a class="btn primary" href="https://www.facebook.com/share/1CgYRzGSTV/" target="_blank" rel="noopener">Click “I’m Going” on Facebook</a>
+      </div>
+    </section>
+
+    <section id="vendors">
+      <div class="container">
+        <h2>Vendors and Partnerships</h2>
+        <p style="color:var(--muted); max-width:700px; margin:0 auto 30px;">We welcome local businesses, artisans, and food vendors to take part in Capital Fest! Showcase your products, promote your brand, and be part of an exciting community celebration. Spaces are limited, so apply early to secure your spot.</p>
+        <a class="btn primary" href="https://form.jotform.com/252728215258258" target="_blank" rel="noopener">Apply as a Vendor</a>
+        <p style="margin-top:30px; color:var(--muted);">Interested in sponsoring the event? <a href="https://form.jotform.com/252808196293264" target="_blank" rel="noopener">Click here to apply for Sponsorship</a>.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
